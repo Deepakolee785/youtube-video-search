@@ -16,7 +16,7 @@ const App = () => {
 	},[])
 
 	const onTermSubmit = async term => {
-		const response = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyA-Qwedfkt5FNBmIjY9XQ1jBU6223L7kYk&maxResults=6&q=${term}`);
+		const response = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyAIrA2x5ERC6YWRHVvXbLTrmjxnrnK7MeU&maxResults=6&q=${term}`);
 
 		setVideos(response.data.items);
 		setSelectedVideo(response.data.items[0])
